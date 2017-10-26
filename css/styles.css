@@ -1,7 +1,23 @@
-#cSharp, #php, #ruby {
-  display: none;
+#cSharp, #ruby, #php, #research {
+  display:none;
+}
+#rubyPic {
+  float: left;
+  margin: 20px;
+}
+#phpPic {
+  float: left;
+  margin: 20px;
+}
+#c-sharpPic {
+  float: left;
+  margin: 20px;
+}
+#researchPic {
+  float: left;
+  margin: 20px;
 }
 
 .greyFont {
-  color: grey;
+  color: : grey;
 }

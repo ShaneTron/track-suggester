@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
@@ -15,56 +14,59 @@
       <h3>  Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development.</h3>
       <h3> Here is a quick survey that might assist you in what direction to go.</h3>
       <form id="personalInfo">
-        <label for="area" class="greyFont">Would you prefer to work for a large or small company?</label>
+        <label for="size" class="greyFont">Would you prefer to work for a large or small company?</label>
         <select class ="form-control" id="size">
-          <option value="selectOne">Select One:</option>
           <option value="large">large</option>
           <option value="small">Small</option>
         </select>
         <label for="frontBack" class="greyFont">Are you more interest in working on back-end or front-end language?</label>
-        <select class="form-control" id="gender">
-          <option value="">Select one:</option>
-          <option value="female">Back-end</option>
-          <option value="male">Front-end</option>
-          <option value="male">Male</option>
+        <select class="form-control" id="frontBack">
+          <option value="back">Back-end</option>
+          <option value="front">Front-end</option>
         </select>
-        <label for="frontBack" class="greyFont">Are you more interest in the style of an app, </label>
-        <select class="form-control" id="gender">
-          <option value="">Select one:</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
+        <label for="style" class="greyFont">Are you interest in the style of an app? </label>
+        <select class="form-control" id="style">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
         </select>
-        <label for="frontBack" class="greyFont">Are you more interest in the style of an app, </label>
-        <select class="form-control" id="gender">
-          <option value="">Select one:</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
+
         </select>
-        <label for="frontBack" class="greyFont">Are you more interest in the style of an app, </label>
-        <select class="form-control" id="gender">
-          <option value="">Select one:</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
+        <label for="number" class="greyFont">Pick a number: </label>
+        <select class="form-control" id="number">
+          <option value="rounded">1</option>
+          <option value="exact">0.988888888</option>
         </select>
+
+        </select>
+        <label for="feels" class="greyFont">How does this form make you feel? </label>
+        <select class="form-control" id="feels">
+          <option value="happy">happy</option>
+          <option value="tired">tired</option>
+        </select>
+
         <button type="submit" class="btn">Submit</button>
       </form>
-      <div class="everything">
-        <div id="cSharp">
-          <h1><strong>YC# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</strong><h1>
-           <img src="img/c-sharp.jpeg" alt="C# logo.">
+        <div class="hide">
+            <div id="cSharp">
+          <img id="c-sharpPic" src="img/c-sharp.jpeg" alt="C# logo.">
+          <h1><strong>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</strong><h1>
         </div>
         <div id="php">
+          <img id="phpPic" src="img/php.jpeg" alt="PHP Logo logo.">
           <h1><strong>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</stong><h1>
-             <img src="img/php.jpeg" alt="PHP Logo logo.">
         </div>
-        <div id="ruby">
+        <div id=ruby>
+          <img id= "rubyPic" src="img/ruby.jpeg" alt="Ruby logo.">
           <h1><strong>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
 
           Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.</strong><h1>
-          <img src="img/ruby.jpeg" alt="Ruby logo.">
+          </div>
+            <div id=research>
+              <img id= "researchPic" src="img/researchPic.jpg" alt="Search screeen picture.">
+              <h1><strong>It looks like you have some soul searching to do! I would suggest you get online and start looing. Also try and meet with peoplein the industry. Pick their Brain!</strong><h1>
+            </div>
         </div>
       </div>
-
     </div>
   </body>
 </html>
